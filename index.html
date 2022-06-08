@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css">
     <title>https://survey-form.freecodecamp.rocks/</title>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" action="">
-        <label id="name-label" for=""></label>
+        <label id="name-label" for="">Name:</label>
         <input id="name" type="text" placeholder="Enter your name">
-        <label id="email-label" for=""></label>
+        <label id="email-label" for="">Email:</label>
         <input id="email" type="text" placeholder="Enter your email">
-        <label id="number-label" for=""></label>
+        <label id="number-label" for="">Age</label>
         <input type="text" id="number" placeholder="Age">
-        <select name="" id="dropdrown"></select>
+        <select name="" id="dropdrown">
+            <option disabled value>Select current role</option>
+            <option value="">Students</option>
+            <option value="">Full Time Job</option>
+            <option value="">Full Time Learner</option>
+            <option value="">Prefer Not To Say</option>
+            <option value="Other">Other</option>
+        </select>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
         <button>
             <input type="radio" name="">
             <input type="radio" name="">
         </button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nesciunt!</p>
         <div>
             <ul>
                 <li class="checkbox"><input type="checkbox" name="" id="" value="1"></li>
@@ -31,6 +38,9 @@
                 <li class="checkbox"><input type="checkbox" name="" id="" value="5"></li>
             </ul>
         </div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button id="submit"></button>
     </form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</p>
 </body>
 </html>
